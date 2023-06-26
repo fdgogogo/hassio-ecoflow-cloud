@@ -39,7 +39,7 @@ class EcoflowAuthentication:
         self.mqtt_password = None
 
     def authorize(self):
-        url = "https://api.ecoflow.com/auth/login"
+        url = "https://api-a.ecoflow.com/auth/login"
         headers = {"lang": "en_US", "content-type": "application/json"}
         data = {"email": self.ecoflow_username,
                 "password": base64.b64encode(self.ecoflow_password.encode()).decode(),
